@@ -9,7 +9,7 @@ WORKDIR /opt/server
 
 COPY ./data .
 
-RUN wget https://api.purpurmc.org/v2/purpur/${MINECRAFT_VERSION}/latest/download -o purpur.jar
+RUN wget https://api.purpurmc.org/v2/purpur/${MINECRAFT_VERSION}/latest/download -O purpur.jar
 RUN chmod +x /opt/server/run.sh
 
 ENTRYPOINT [ "/opt/server/run.sh" ]
