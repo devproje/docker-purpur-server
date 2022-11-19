@@ -2,8 +2,8 @@ version: "3.9"
 
 services:
   paper-server:
-    container_name: "paper-server"
-    image: "docker-paper-server"
+    container_name: "purpur-server"
+    image: "docker-purpur-server"
     networks:
       - mc
     tty: true
